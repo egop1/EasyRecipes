@@ -77,9 +77,12 @@ java -cp verification/out com.example.easyrecipes.script.Driver
 
 ## Not supported yet
 
+- **Editing does not load the original recipe.** "Override" means *remove the old one and add
+  yours*, so the editor opens empty and you lay the replacement out from scratch — you cannot pull
+  up a recipe and nudge one ingredient. For the mechanical crafter this also means nothing tells you
+  what grid size the original used; you pick it in the size dialog yourself.
 - Sequenced assembly (Create) — needs its own multi-step editor.
 - Brewing — vanilla brewing is not data-driven and KubeJS has no server-script API for it.
-- Editing a mechanical crafter recipe does not read the original's grid size; you pick it yourself.
 
 ## License
 
