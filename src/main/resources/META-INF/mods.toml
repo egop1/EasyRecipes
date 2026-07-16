@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="[47,)"
 license="MIT"
+issueTrackerURL="https://github.com/egop1/EasyRecipes/issues"
 
 [[mods]]
 modId="easyrecipes"
@@ -8,6 +9,7 @@ version="${file.jarVersion}"
 displayName="Easy Recipes (KubeJS)"
 authors="EGOP1"
 logoFile="icon.png"
+displayURL="https://github.com/egop1/EasyRecipes"
 description='''
 Make recipes in-game instead of writing JavaScript by hand.
 
