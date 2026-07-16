@@ -20,10 +20,10 @@ restart. You can also enter an existing recipe id and override it.
 Vanilla stations: crafting table (shaped and shapeless), furnace, blast furnace, smoker,
 campfire, stonecutter, smithing table.
 
-Create stations (listed only when Create is installed): crushing wheels, millstone, mechanical
-press, mechanical saw, encased fan (smelting, blasting, washing, haunting), sandpaper polishing,
-deployer, spout, item drain, mechanical mixer, compacting, mechanical crafter. Machines with
-random results let you build a weighted output list with per-item chances.
+Create stations (need both Create and the KubeJS Create addon): crushing wheels, millstone,
+mechanical press, mechanical saw, encased fan (smelting, blasting, washing, haunting), sandpaper
+polishing, deployer, spout, item drain, mechanical mixer, compacting, mechanical crafter. Machines
+with random results let you build a weighted output list with per-item chances.
 
 Requires KubeJS -- the generated scripts do nothing without it.
 '''
@@ -47,5 +47,21 @@ Requires KubeJS -- the generated scripts do nothing without it.
     modId="kubejs"
     mandatory=true
     versionRange="[2001,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Optional: the Create stations are hidden unless BOTH of these are present. Create supplies the
+# machines, kubejs_create supplies the event.recipes.createX(...) calls the generated script makes.
+[[dependencies.easyrecipes]]
+    modId="create"
+    mandatory=false
+    versionRange="[0.5.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.easyrecipes]]
+    modId="kubejs_create"
+    mandatory=false
+    versionRange="*"
     ordering="AFTER"
     side="BOTH"

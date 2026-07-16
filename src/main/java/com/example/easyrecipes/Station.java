@@ -72,11 +72,18 @@ public enum Station {
         return recipeTypeId;
     }
 
-    /** True when this station's required mod (if any) is loaded. Every listed station has an editor. */
+    /**
+     * True when this station's required mods are loaded. Every listed station has an editor.
+     *
+     * <p>Create machines need <em>kubejs_create</em> as well as Create itself: the generated script
+     * calls {@code event.recipes.createCrushing(...)}, which that addon adds — Create alone does not
+     * teach KubeJS anything. Without it the call is undefined, and one undefined call aborts the
+     * whole generated file, taking every other recipe (vanilla ones included) down with it.
+     */
     public boolean available() {
         if (requiresCreate) {
             try {
-                return ModList.get().isLoaded("create");
+                return ModList.get().isLoaded("create") && ModList.get().isLoaded("kubejs_create");
             } catch (Exception e) {
                 return false;
             }

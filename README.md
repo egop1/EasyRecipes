@@ -21,10 +21,14 @@ Recipes are stored on the **server**, so everything you make applies to everyone
 **Vanilla** — crafting table (shaped + shapeless), furnace, blast furnace, smoker, campfire,
 stonecutter, smithing table.
 
-**[Create](https://www.curseforge.com/minecraft/mc-mods/create)** *(shown only when Create is installed)* —
-crushing wheels, millstone, mechanical press, mechanical saw, encased fan (roasting / smelting /
-washing / haunting), sandpaper polishing, deployer, spout, item drain, mechanical mixer, compacting,
-and the mechanical crafter at **any grid size up to 9×9**.
+**[Create](https://www.curseforge.com/minecraft/mc-mods/create)** — crushing wheels, millstone,
+mechanical press, mechanical saw, encased fan (roasting / smelting / washing / haunting), sandpaper
+polishing, deployer, spout, item drain, mechanical mixer, compacting, and the mechanical crafter at
+**any grid size up to 9×9**.
+
+> Create stations also need **[KubeJS Create](https://www.curseforge.com/minecraft/mc-mods/kubejs-create)**,
+> the addon that teaches KubeJS about Create's recipes — Create by itself is not enough. The
+> stations stay greyed out until both are installed.
 
 Machines with random results let you build a weighted output list with a chance per item. Fluids are
 set by dropping a bucket into the fluid slot and typing an amount in mB.

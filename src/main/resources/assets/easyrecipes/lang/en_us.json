@@ -31,7 +31,7 @@
   "gui.easyrecipes.station.mechanical_mixer": "Mechanical Mixer",
   "gui.easyrecipes.station.compacting": "Compacting",
   "gui.easyrecipes.station.mechanical_crafter": "Mechanical Crafter",
-  "gui.easyrecipes.station.needs_create": "Requires the Create mod",
+  "gui.easyrecipes.station.needs_create": "Requires Create and the KubeJS Create addon",
 
   "gui.easyrecipes.create.chance": "%",
   "gui.easyrecipes.create.duration": "Ticks",
