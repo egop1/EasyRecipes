@@ -1,0 +1,12 @@
+# Normalise text files in the repo; check them out with native line endings.
+* text=auto
+
+# gradlew is run by /bin/sh: CRLF breaks it on Linux/macOS, so it must stay LF everywhere.
+gradlew text eol=lf
+
+# Windows-only script: keep CRLF.
+gradlew.bat text eol=crlf
+
+# Binary — never touch.
+*.jar binary
+*.png binary

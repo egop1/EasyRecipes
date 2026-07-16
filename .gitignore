@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# Minecraft run dirs (worlds, logs, configs generated at runtime)
+run/
+run-data/
+logs/
+
+# Standalone verification harness output
+verification/out/
+
+# OS junk
+Thumbs.db
+.DS_Store

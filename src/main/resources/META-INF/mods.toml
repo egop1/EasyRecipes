@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="easyrecipes"
+version="${file.jarVersion}"
+displayName="Easy Recipes (KubeJS)"
+authors="EGOP1"
+logoFile="icon.png"
+description='''
+Make recipes in-game instead of writing JavaScript by hand.
+
+Run /easyrecipes to open the editor: pick a station, drag items into the slots, press Save.
+The mod writes the KubeJS script for you and reloads it -- no files, no syntax errors, no
+restart. You can also enter an existing recipe id and override it.
+
+Vanilla stations: crafting table (shaped and shapeless), furnace, blast furnace, smoker,
+campfire, stonecutter, smithing table.
+
+Create stations (listed only when Create is installed): crushing wheels, millstone, mechanical
+press, mechanical saw, encased fan (smelting, blasting, washing, haunting), sandpaper polishing,
+deployer, spout, item drain, mechanical mixer, compacting, mechanical crafter. Machines with
+random results let you build a weighted output list with per-item chances.
+
+Requires KubeJS -- the generated scripts do nothing without it.
+'''
+
+[[dependencies.easyrecipes]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.easyrecipes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+# The generated .js scripts do nothing without KubeJS present at runtime.
+[[dependencies.easyrecipes]]
+    modId="kubejs"
+    mandatory=true
+    versionRange="[2001,)"
+    ordering="AFTER"
+    side="BOTH"
