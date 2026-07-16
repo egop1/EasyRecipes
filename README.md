@@ -8,8 +8,9 @@ Minecraft **1.20.1** · **Forge** · requires **[KubeJS](https://www.curseforge.
 
 ## What it does
 
-Run `/easyrecipes`, pick a station, drag items into the slots, press **Save**. The mod writes the
-KubeJS script for you, reloads it, and the recipe is live — no files, no syntax errors, no restart.
+Run `/easyrecipes` and pick a station — that opens its recipe list. Press **Add** for an empty
+editor, drag items into the slots, and press **Save**. The mod writes the KubeJS script for you,
+reloads it, and the recipe is live — no files, no syntax errors, no restart.
 
 You can also type an existing recipe id (with Tab-completion) to **override** or **delete** it, so
 "make diamonds cheaper" or "remove TNT" takes about ten seconds.
